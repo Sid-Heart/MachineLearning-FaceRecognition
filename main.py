@@ -78,12 +78,14 @@ def updateImage(root,canvas):
         canvas.create_image(0, 0, image=canvas.image, anchor='nw')
         for fset in range(len(face_locations)):
             canvas.create_text((face_locations[fset][1]+face_locations[fset][3])/2,min(face_locations[fset][0],face_locations[fset][2]),fill=CONSTANTS.LABEL_TEXT_COLOR,font=CONSTANTS.LABEL_FONT,text=tempReco[fset])
+        # Pack CAnvas
+        canvas.pack()
         #............................................
         #CApture New Image As Soonn AS the Processing Finishes
-        canvas.after(1, updateImage, root,canvas)
         print("Updating...")
-    except:
+    except IndexError:
         print "Error :",sys.exc_info()
+    canvas.after(1, updateImage, root,canvas)
 
 #Create A WIndow
 top = Tkinter.Tk()
@@ -91,8 +93,6 @@ top = Tkinter.Tk()
 canvas = Tkinter.Canvas(top,height=image.shape[0]*CONSTANTS.SCALING_X, width=image.shape[1]*CONSTANTS.SCALING_Y)
 #Update CAnvas As Fast As Possible
 updateImage( top,canvas)
-#Pack CAnvas
-canvas.pack()
 #LIsten For Evwnts
 top.mainloop()
 
