@@ -7,8 +7,7 @@ import numpy as np
 try:
     import face_recognition_models
 except Exception:
-    print("Please install `face_recognition_models` with this command before using `face_recognition`:\n")
-    print("pip install git+https://github.com/ageitgey/face_recognition_models")
+    print("Face Recognition Model Not Availaible:\n")
     quit()
 
 face_detector = dlib.get_frontal_face_detector()
