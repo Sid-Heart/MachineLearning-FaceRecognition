@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
         # Find all people in the image using a trained classifier model
         # Note: You can pass in either a classifier file name or a classifier model instance
-        predictions = predict(full_file_path, model_path="trained_knn_model.dat")
+        predictions = predict(full_file_path, model_path="trained_model.dat")
 
         # Print results on the console
         for name, (top, right, bottom, left) in predictions:
