@@ -1,7 +1,7 @@
 import face_recognition as face_recognition
 from PIL import Image , ImageTk
 import Tkinter
-import cv2
+import cv2.cv
 import constants as CONSTANTS
 import sys
 
