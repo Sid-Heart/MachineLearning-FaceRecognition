@@ -10,7 +10,7 @@ from face_recognition.face_recognition_cli import image_files_in_folder
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 
-def train(train_dir, model_save_path=None, n_neighbors=None, knn_algo='ball_tree', verbose=False):
+def train(train_dir, model_save_path=None, n_neighbors=None, algo='ball_tree', verbose=False):
     X = []
     y = []
 
@@ -40,7 +40,7 @@ def train(train_dir, model_save_path=None, n_neighbors=None, knn_algo='ball_tree
             print("Chose n_neighbors automatically:", n_neighbors)
 
     # Create and train the classifier
-    knn_clf = neighbors.KNeighborsClassifier(n_neighbors=n_neighbors, algorithm=knn_algo, weights='distance')
+    knn_clf = neighbors.KNeighborsClassifier(n_neighbors=n_neighbors, algorithm=algo, weights='distance')
     knn_clf.fit(X, y)
 
     # Save the trained classifier
