@@ -22,16 +22,17 @@ Trains a classifier for face recognition.
 * param knn_algo: (optional) underlying data structure to support knn.default is ball_tree
 * param verbose: verbosity of training
 * return: returns classifier that was trained on the given data.
-Structure:
-<train_dir>/
-├── <person1>/
-│   ├── <somename1>.jpeg
-│   ├── <somename2>.jpeg
-│   ├── ...
-├── <person2>/
-│   ├── <somename1>.jpeg
-│   └── <somename2>.jpeg
-└── ...
+
+#### Structure:
+* \<train_dir\>
+* * \<person1\>
+* * * \<somename1\>.jpeg
+* * * \<somename2\>.jpeg
+* * * ...
+* * \<person2\>
+* * * \<somename1\>.jpeg
+* * * \<somename2\>.jpeg
+* * * ...
 
 ### Predict Function
 Recognizes faces in given image using a trained classifier
