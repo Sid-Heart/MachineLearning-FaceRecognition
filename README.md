@@ -15,17 +15,21 @@ Final Year Project On Machine Learning
 - Webcam Should Open To detect Those Faces
 
 # Defined Constants
-* #### SCALING_X=0.5
-Defines Scaling Of Webcam Data 
-* #### SCALING_Y=0.5
-Defines Scaling Of Webcam Data 
-* #### BOUNDING_BOX_COLOR=[231,80,0]
+* #### ```SCALING_X=0.5```
+Defines Scaling Of Webcam Image 
+* #### ```SCALING_Y=0.5```
+Defines Scaling Of Webcam Image 
+* #### ```BOUNDING_BOX_COLOR=[231,80,0]```
 Color Of Box Of Face
-* #### LABEL_TEXT_COLOR="white"
+* #### ```LABEL_TEXT_COLOR="white"```
 Text Color Of Label
-* #### LABEL_FONT="Times 20 italic bold"
+* #### ```LABEL_FONT="Times 20 italic bold"```
 Font Of Label Fonts
-* #### COMPARISON_TOLERENCE=0.4
+* #### ```COMPARISON_TOLERENCE=0.4```
 How Strict System Is (Less Is More Strict)
 
 # Output
+- Input
+![Input](https://raw.githubusercontent.com/Sid-Heart/MachineLearning-FaceRecognition/master/Test/Input.png)
+- Output
+![Output](https://raw.githubusercontent.com/Sid-Heart/MachineLearning-FaceRecognition/master/Test/Output.png)
