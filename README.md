@@ -29,7 +29,11 @@ Font Of Label Fonts
 How Strict System Is (Less Is More Strict)
 
 # Output
-- Input
+- Input 
+
 ![Input](https://raw.githubusercontent.com/Sid-Heart/MachineLearning-FaceRecognition/master/Test/Input.png)
-- Output
+
+- Output 
+
 ![Output](https://raw.githubusercontent.com/Sid-Heart/MachineLearning-FaceRecognition/master/Test/Output.png)
+
